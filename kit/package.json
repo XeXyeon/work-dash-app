@@ -1,0 +1,20 @@
+{
+  "name": "work-dash-kit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "에이전트(Claude Code · Codex)와 일한 기록을 마크다운으로 남기는 도구: 형식 문서 · 파서 · 명령 · 훅",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "lint": "node lint/changed.js",
+    "test": "node --test test/*.test.js",
+    "init": "node bin/install.js init",
+    "uninstall": "node bin/install.js uninstall"
+  },
+  "devDependencies": {
+    "eslint": "^10.15.0"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "checks": [
+    {
+      "when": [
+        "core/**/*.js",
+        "bin/**/*.js",
+        "view/**/*.js",
+        "test/**/*.js",
+        "lint/**/*.js",
+        "eslint.config.js"
+      ],
+      "run": "npm run lint"
+    },
+    {
+      "when": [
+        "bin/**",
+        "core/**",
+        "view/**",
+        "lint/**",
+        "test/**",
+        "rules/**"
+      ],
+      "run": "npm test"
+    }
+  ],
+  "full": "npm run lint && npm test",
+  "fullBeforePush": true
+}
